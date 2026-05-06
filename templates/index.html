@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TeenVibe Creator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <nav>
+        <div class="logo">TeenVibe</div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#produk">Produk</a></li>
+            <li><a href="#kontak">Kontak</a></li>
+        </ul>
+    </nav>
+
+    <header id="home">
+        <h1>Content Creator Studio</h1>
+        <p>Mengubah ide kreatif remaja menjadi konten digital berkelas.</p>
+    </header>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <div class="card">
+            <h3>Nama Usaha: <span>TeenVibe Digital</span></h3>
+            <p><strong>Latar Belakang:</strong> Lahir dari semangat generasi Z untuk berekspresi melalui video dan tulisan yang relevan dengan tren masa kini.</p>
+            <p><strong>Visi:</strong> Menjadi wadah kreatifitas digital nomor satu bagi remaja.</p>
+            <p><strong>Misi:</strong> Menyediakan edukasi dan jasa pembuatan konten yang edukatif, menghibur, dan estetik.</p>
+        </div>
+    </section>
+
+    <section id="produk">
+        <h2>Layanan Kami</h2>
+        <ul>
+            <li>Cinematic Video Editing</li>
+            <li>Creative Blog Writing</li>
+            <li>Social Media Management</li>
+        </ul>
+    </section>
+
+    <footer id="kontak">
+        <p>Hubungi kami: @teenvibe_creator | contact@teenvibe.id</p>
+        <button onclick="sapaUser()">Klik untuk Kolaborasi</button>
+    </footer>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
