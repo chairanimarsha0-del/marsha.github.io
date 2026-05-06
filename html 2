@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="hero">
+    <h1>Selamat Datang di {{ info.name }}</h1>
+    <p class="description">{{ info.description }}</p>
+    <a href="#services" class="btn">Lihat Layanan</a>
+</section>
+
+<section id="services" class="services-container">
+    <h2>Layanan Kami</h2>
+    <div class="grid">
+        {% for service in info.services %}
+        <div class="card">
+            <h3>{{ service.title }}</h3>
+            <p>{{ service.desc }}</p>
+        </div>
+        {% endfor %}
+    </div>
+</section>
+{% endblock %}
