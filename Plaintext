@@ -1,0 +1,7 @@
+/my_web_project
+    ├── app.py              (Kode Python)
+    ├── static/
+    │   ├── style.css       (Kode CSS)
+    │   └── script.js       (Kode JS)
+    └── templates/
+        └── index.html      (Kode HTML)
